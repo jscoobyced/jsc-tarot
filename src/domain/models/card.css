@@ -1,0 +1,35 @@
+.div--card {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    width: 20%;
+    vertical-align:top;
+}
+
+.span--card-title, .span--card-name, .span--card-text {
+    display: block;
+}
+
+.img--card {
+    margin-top: 20px;
+}
+
+.span--card-text {
+    margin: 10px 0 20px 0;
+}
+
+.img--card-reversed {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 820px)  {
+    .div--card {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .img--card {
+        margin-top: 5px;
+    }
+}
