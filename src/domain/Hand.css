@@ -16,8 +16,17 @@ button {
     min-height: 550px;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 5px 0;
     background-color: #a52a2a;
+    border-radius: 10px;
+}
+
+.div--cards-border {
+    height: 550px;
+    margin: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee8aa;
     border-radius: 10px;
 }
 

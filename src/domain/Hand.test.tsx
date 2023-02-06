@@ -3,7 +3,9 @@ import { act } from "react-dom/test-utils";
 import Hand from "./Hand";
 
 test("renders the cards Hand", () => {
-  render(<Hand />);
+  render(
+    <Hand text={["Please draw your cards.", ""]} title="test" cards={4} />
+  );
   const emptyImage = screen.queryAllByRole("img");
   expect(emptyImage.length).toBe(0);
   const buttonElement = screen.getByRole("button");
