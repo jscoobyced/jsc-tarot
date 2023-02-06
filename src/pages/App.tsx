@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import { HashRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 import Hand from "../domain/Hand";
 import Home from "../domain/Home";
 import "./App.css";
 
 const AppRoute = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
@@ -37,7 +37,7 @@ const AppRoute = () => {
           />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
