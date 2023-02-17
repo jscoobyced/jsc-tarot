@@ -4,7 +4,6 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <h1>Welcome</h1>
       <span>Please chose your fortune:</span>
       <div className="home--choice">
         <Link to="/fortune">

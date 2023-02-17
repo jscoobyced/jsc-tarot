@@ -45,7 +45,7 @@ const App = () => {
   return (
     <>
       <header>
-        <span>Welcome to Sawan</span>
+        <h1>Welcome to Sawan</h1>
         <nav>
           <Link to="/">Home</Link> | <Link to="/fortune">4 cards fortune</Link>{" "}
           | <Link to="/question">1 card fortune</Link>

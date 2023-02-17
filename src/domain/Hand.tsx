@@ -118,84 +118,86 @@ const Hand = (props: { title: string; cards: number; text: string[] }) => {
 
   return (
     <>
-      <h1>{props.title}</h1>
+      <h2>{props.title}</h2>
       <div className="message">{text}</div>
       <div className="div--cards-container">
-            <Card
-              key={`card_0`}
-              index={0}
-              size="full_size"
-              card={cardNumbers[0]}
-              cardText={cardDescription[0]}
-              cardName={cardNames[0]}
-              isReversed={cardIsReversed[0]}
-              cardShortText={""}
-              title={props.cards === 1 ? titles[3] : titles[0]}
-              click={clickCard}
-              canClick={canClick[0]}
-              isVisible={cardIsVisible[0]}
-            ></Card>
-            {props.cards > 1 ? (
-              <>
-                <Card
-                  key={"card_1"}
-                  index={1}
-                  size="full_size"
-                  card={cardNumbers[1]}
-                  cardText={cardDescription[1]}
-                  cardName={cardNames[1]}
-                  isReversed={cardIsReversed[1]}
-                  cardShortText={""}
-                  title={titles[1]}
-                  click={clickCard}
-                  canClick={canClick[1]}
-                  isVisible={cardIsVisible[1]}
-                ></Card>
-                {props.cards > 2 ? (
-                  <>
-                    <Card
-                      key={"card_2"}
-                      index={2}
-                      size="full_size"
-                      card={cardNumbers[2]}
-                      cardText={cardDescription[2]}
-                      cardName={cardNames[2]}
-                      isReversed={cardIsReversed[2]}
-                      cardShortText={""}
-                      title={titles[2]}
-                      click={clickCard}
-                      canClick={canClick[2]}
-                      isVisible={cardIsVisible[2]}
-                    ></Card>
-                    {props.cards > 3 ? (
-                      <>
-                        <Card
-                          key={"card_3"}
-                          index={3}
-                          size="full_size"
-                          card={cardNumbers[3]}
-                          cardText={cardDescription[3]}
-                          cardName={cardNames[3]}
-                          isReversed={cardIsReversed[3]}
-                          cardShortText={""}
-                          title={titles[3]}
-                          click={clickCard}
-                          canClick={canClick[3]}
-                          isVisible={cardIsVisible[3]}
-                        ></Card>
-                      </>
-                    ) : (
-                      <></>
-                    )}
-                  </>
-                ) : (
-                  <></>
-                )}
-              </>
-            ) : (
-              <></>
-            )}
-          </div>
+        <div className="div--cards-border">
+          <Card
+            key={`card_0`}
+            index={0}
+            size="full_size"
+            card={cardNumbers[0]}
+            cardText={cardDescription[0]}
+            cardName={cardNames[0]}
+            isReversed={cardIsReversed[0]}
+            cardShortText={""}
+            title={props.cards === 1 ? titles[3] : titles[0]}
+            click={clickCard}
+            canClick={canClick[0]}
+            isVisible={cardIsVisible[0]}
+          ></Card>
+          {props.cards > 1 ? (
+            <>
+              <Card
+                key={"card_1"}
+                index={1}
+                size="full_size"
+                card={cardNumbers[1]}
+                cardText={cardDescription[1]}
+                cardName={cardNames[1]}
+                isReversed={cardIsReversed[1]}
+                cardShortText={""}
+                title={titles[1]}
+                click={clickCard}
+                canClick={canClick[1]}
+                isVisible={cardIsVisible[1]}
+              ></Card>
+              {props.cards > 2 ? (
+                <>
+                  <Card
+                    key={"card_2"}
+                    index={2}
+                    size="full_size"
+                    card={cardNumbers[2]}
+                    cardText={cardDescription[2]}
+                    cardName={cardNames[2]}
+                    isReversed={cardIsReversed[2]}
+                    cardShortText={""}
+                    title={titles[2]}
+                    click={clickCard}
+                    canClick={canClick[2]}
+                    isVisible={cardIsVisible[2]}
+                  ></Card>
+                  {props.cards > 3 ? (
+                    <>
+                      <Card
+                        key={"card_3"}
+                        index={3}
+                        size="full_size"
+                        card={cardNumbers[3]}
+                        cardText={cardDescription[3]}
+                        cardName={cardNames[3]}
+                        isReversed={cardIsReversed[3]}
+                        cardShortText={""}
+                        title={titles[3]}
+                        click={clickCard}
+                        canClick={canClick[3]}
+                        isVisible={cardIsVisible[3]}
+                      ></Card>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                </>
+              ) : (
+                <></>
+              )}
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+      </div>
       <button disabled={!canGetNewCards} onClick={generateCards}>
         {buttonText}
       </button>
