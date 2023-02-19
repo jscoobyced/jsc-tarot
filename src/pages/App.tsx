@@ -54,9 +54,7 @@ const App = () => {
       <main>
         <Outlet />
       </main>
-      <footer role="complementary">
-        JSC Tarot &copy; 2023 C&eacute;dric Rochefolle{" "}
-      </footer>
+      <footer role="complementary">JSC Tarot &copy; 2023 IndyTheDog</footer>
     </>
   );
 };
