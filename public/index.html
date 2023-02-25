@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="canonical" href="https://sawan.io" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,5 +25,33 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How many Tarot fortune telling mode is there on this site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>There are 2 types of fortune telling:<ul><li>1 card fortune for a simple answer</li><li>4 cards fortune for a more thorough prediction</li></ul></p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I get my prediction?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>To get your prediction:<ol><li>Chose your prediction style: 1 or 4 cards</li><li>Relax, breath and focus on the question you want answered</li><li>Click the &quot;Draw your card&quot; button</li><li>Click on each card in sequence and read the prediction</li></ol></p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "How much does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>I don't charge anything for this service. I give it to people as a contributioin to the world</p>"
+        }
+      }]
+    }
+    </script>
   </body>
 </html>

@@ -1,6 +1,8 @@
-import { HashRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
+import About from "../domain/About";
 import Hand from "../domain/Hand";
 import Home from "../domain/Home";
+import Menu from "../domain/Menu";
 import "./App.css";
 
 const AppRoute = () => {
@@ -35,6 +37,7 @@ const AppRoute = () => {
               />
             }
           />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </HashRouter>
@@ -46,10 +49,7 @@ const App = () => {
     <>
       <header>
         <h1>Welcome to Sawan</h1>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/fortune">4 cards fortune</Link>{" "}
-          | <Link to="/question">1 card fortune</Link>
-        </nav>
+        <Menu />
       </header>
       <main>
         <Outlet />
