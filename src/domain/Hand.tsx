@@ -3,6 +3,7 @@ import Card from "./models/card";
 import descriptions from "./models/descriptions.json";
 import names from "./models/names.json";
 import "./Hand.css";
+import Title from "./Title";
 
 const Hand = (props: { title: string; cards: number; text: string[] }) => {
   const [buttonText, setButtonText] = useState(props.text[1]);
@@ -118,7 +119,7 @@ const Hand = (props: { title: string; cards: number; text: string[] }) => {
 
   return (
     <>
-      <h2>{props.title}</h2>
+      <Title text={props.title}></Title>
       <div className="message">{text}</div>
       <div className="div--cards-container">
         <div className="div--cards-border">

@@ -2,6 +2,7 @@ header,
 main {
   width: 100%;
   text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -10,33 +11,26 @@ main {
 header {
   background-color: #00bfff;
   border-bottom: 1px solid #000;
-  align-items: center;
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
-h1,
-h2 {
+h1 {
   margin: 0;
   padding-top: 10px;
-  text-align: left;
-}
-
-main h2 {
-  margin-left: 50px;
+  width: 80%;
 }
 
 footer {
   display: flex;
   flex: 1;
-  margin: 5px auto;
+  margin: 20px auto 0;
   text-align: center;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  padding: 10px;
   color: inherit;
 }
 
@@ -44,10 +38,6 @@ a {
   h1 {
     font-size: medium;
   }
-}
-
-.mb-20 {
-  margin-bottom: 20px;
 }
 
 .div--cards-container {
@@ -69,4 +59,10 @@ a {
   border-width: 1px;
   border-color: #eee8aa;
   border-radius: 10px;
+}
+
+.list-left {
+  text-align: left;
+  line-height: 1.5em;
+  padding-left: 20px;
 }

@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
+import Faq from "../domain/Faq";
 import About from "../domain/About";
 import Hand from "../domain/Hand";
 import Home from "../domain/Home";
@@ -37,6 +38,7 @@ const AppRoute = () => {
               />
             }
           />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>

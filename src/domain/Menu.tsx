@@ -19,7 +19,15 @@ const Menu = () => {
             </li>
           </ul>
         </li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/">About</Link>
+        <ul>
+            <li>
+              <Link to="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul></li>
       </ul>
     </nav>
   );

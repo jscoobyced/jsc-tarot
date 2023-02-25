@@ -1,52 +1,19 @@
 import "./About.css";
+import Title from "./Title";
 
 const About = () => {
   return (
     <>
-      <h2 className="mb-20">Frequently Asked Questions</h2>
+      <Title text="About Sawan.io"></Title>
       <div className="div--cards-container">
-        <div className="div--cards-border">
-          <ul className="faq">
-            <li>
-              How many Tarot fortune telling mode is there on this site?
-              <ul>
-                <li>
-                  There are 2 types of fortune telling:
-                  <ul>
-                    <li>1 card fortune for a simple answer</li>
-                    <li>4 cards fortune for a more thorough prediction</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              How do I get my prediction?
-              <ul>
-                <li>
-                  To get your prediction:
-                  <ol>
-                    <li>Chose your prediction style: 1 or 4 cards</li>
-                    <li>
-                      Relax, breath and focus on the question you want answered
-                    </li>
-                    <li>Click the &quot;Draw your card&quot; button</li>
-                    <li>
-                      Click on each card in sequence and read the prediction
-                    </li>
-                  </ol>
-                </li>
-              </ul>
-            </li>
-            <li>
-              How much does it cost?
-              <ul>
-                <li>
-                  I don't charge anything for this service. I give it to people
-                  as a contributioin to the world
-                </li>
-              </ul>
-            </li>
+        <div className="div--cards-border list-left">
+          <p>Sawan.io is a website that provides free information for the users, on a few topics:</p>
+          <ul>
+            <li>Fortune telling with tarat card reading</li>
+            <li>Magic 8 ball (coming soon)</li>
+            <li>More topics coming soon</li>
           </ul>
+          <p>Please don't hesitate to suggest more topics you would like to see.</p>
         </div>
       </div>
     </>
