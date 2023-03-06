@@ -5,6 +5,7 @@ import Hand from "../domain/Hand";
 import Home from "../domain/Home";
 import Menu from "../domain/Menu";
 import "./App.css";
+import EightBall from "../domain/EightBall";
 
 const AppRoute = () => {
   return (
@@ -38,6 +39,7 @@ const AppRoute = () => {
               />
             }
           />
+          <Route path="/8ball" element={<EightBall />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/about" element={<About />} />
         </Route>
