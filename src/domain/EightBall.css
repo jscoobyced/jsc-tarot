@@ -18,31 +18,58 @@
 }
 
 .image--shake {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-  }
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -4px) rotate(-5deg); }
-    20% { transform: translate(-5px, 0px) rotate(5deg); }
-    30% { transform: translate(5px, 4px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(5deg); }
-    50% { transform: translate(-1px, 4px) rotate(-5deg); }
-    60% { transform: translate(-5px, 1px) rotate(0deg); }
-    70% { transform: translate(5px, 1px) rotate(-5deg); }
-    80% { transform: translate(-1px, -1px) rotate(5deg); }
-    90% { transform: translate(1px, 4px) rotate(0deg); }
-    100% { transform: translate(1px, -4px) rotate(-5deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
+  10% {
+    transform: translate(-1px, -4px) rotate(-5deg);
+  }
+  20% {
+    transform: translate(-5px, 0px) rotate(5deg);
+  }
+  30% {
+    transform: translate(5px, 4px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-1px, 4px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(-5px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(5px, 1px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(5deg);
+  }
+  90% {
+    transform: translate(1px, 4px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -4px) rotate(-5deg);
+  }
+}
 
 @media screen and (max-width: 820px) {
-    .img--8ball {
-        width: 350px;
-    }
-
-    .text--8ball-answer {
-        font-size: smaller;
-    }
+  .img--8ball {
+    width: 350px;
   }
-  
+
+  .text--8ball-answer {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text--8ball-answer {
+    top: 32%;
+  }
+}
