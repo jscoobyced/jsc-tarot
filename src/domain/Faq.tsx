@@ -5,8 +5,7 @@ const About = () => {
   return (
     <>
       <Title text="Frequently Asked Questions"></Title>
-      <div className="div--cards-container">
-        <div className="div--cards-border list-left">
+        <div className="faq list-left">
           <ul>
             <li>
               How many Tarot fortune telling mode is there on this site?
@@ -49,7 +48,6 @@ const About = () => {
             </li>
           </ul>
         </div>
-      </div>
     </>
   );
 };

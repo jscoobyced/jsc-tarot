@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
+  background-color: #ffe1c5;
+  background-image: url('background.webp');
+  background-repeat: no-repeat;
+  background-position: 50% 100px;
+  color: #001369;
   display: flex;
 }
 
@@ -13,4 +17,10 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    background-image: url('background-mobile.webp');
+  }
 }

@@ -1,3 +1,7 @@
-.home--choice img {
-    display: block;
+.home--intro {
+    padding-top: 50px;
+}
+
+.home--intro_span {
+    padding: 50px;
 }

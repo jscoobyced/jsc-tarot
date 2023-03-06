@@ -1,27 +1,12 @@
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <span>Please chose your fortune:</span>
-      <div className="home--choice">
-        <Link to="/fortune">
-          <img
-            src={"images/cards/mid_size/00.png"}
-            alt="Default card backgrouns"
-          />
-          4 cards fortune
-        </Link>
-        <Link to="/question">
-          {" "}
-          <img
-            src={"images/cards/mid_size/00.png"}
-            alt="Default card backgrouns"
-          />
-          1 card fortune
-        </Link>
-      </div>
+      <h2 className="home--intro">
+        Welcome to your fortune teller!        
+      </h2>
+      <span className="home--intro_span">Please choose your preferred fortune requests from the above menu.</span>
     </>
   );
 };
