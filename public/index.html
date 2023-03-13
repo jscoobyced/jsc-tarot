@@ -13,45 +13,65 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/icon_192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <meta property="fb:app_id" content="2166492243535585" />
-    <meta property="og:title" content="sawan.io"/>
-    <meta property="og:description" content="JSC Tarot app let you get your instant fortune told."/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="%PUBLIC_URL%"/>
-    <meta property="og:site_name" content="Sawan.io"/>
-    <meta property="og:image" content="%PUBLIC_URL%/images/jsc_tarot.png"/>
+    <meta property="og:title" content="sawan.io" />
+    <meta
+      property="og:description"
+      content="JSC Tarot app let you get your instant fortune told."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="%PUBLIC_URL%" />
+    <meta property="og:site_name" content="Sawan.io" />
+    <meta property="og:image" content="%PUBLIC_URL%/images/jsc_tarot.png" />
 
     <title>JSC Tarot App</title>
   </head>
   <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z9JRHC0H9B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Z9JRHC0H9B");
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How many Tarot fortune telling mode is there on this site?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "<p>There are 2 types of fortune telling:<ul><li>1 card fortune for a simple answer</li><li>4 cards fortune for a more thorough prediction</li></ul></p>"
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do I get my prediction?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "<p>To get your prediction:<ol><li>Chose your prediction style: 1 or 4 cards</li><li>Relax, breath and focus on the question you want answered</li><li>Click the &quot;Draw your card&quot; button</li><li>Click on each card in sequence and read the prediction</li></ol></p>"
-        }
-      }, {
-        "@type": "Question",
-        "name": "How much does it cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "<p>I don't charge anything for this service. I give it to people as a contributioin to the world</p>"
-        }
-      }]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many Tarot fortune telling mode is there on this site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>There are 2 types of fortune telling:<ul><li>1 card fortune for a simple answer</li><li>4 cards fortune for a more thorough prediction</li></ul></p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get my prediction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>To get your prediction:<ol><li>Chose your prediction style: 1 or 4 cards</li><li>Relax, breath and focus on the question you want answered</li><li>Click the &quot;Draw your card&quot; button</li><li>Click on each card in sequence and read the prediction</li></ol></p>"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>I don't charge anything for this service. I give it to people as a contributioin to the world</p>"
+            }
+          }
+        ]
+      }
     </script>
   </body>
 </html>
