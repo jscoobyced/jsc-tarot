@@ -2,26 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="canonical" href="https://sawan.io" />
+    <link rel="icon" href="%REACT_APP_PUBLIC_URL%/favicon.ico" />
+    <link rel="canonical" href="%REACT_APP_PUBLIC_URL%" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="JSC Tarot app let you get your instant fortune told."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/icon_192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <meta property="fb:app_id" content="2166492243535585" />
-    <meta property="og:title" content="sawan.io" />
+    <link rel="apple-touch-icon" href="%REACT_APP_PUBLIC_URL%/images/icon_192.png" />
+    <link rel="manifest" href="%REACT_APP_PUBLIC_URL%/manifest.json" />
+    <meta property="fb:app_id" content="%REACT_APP_FB_APP_ID%" />
+    <meta property="og:title" content="%REACT_APP_SITE_NAME%" />
     <meta
       property="og:description"
       content="JSC Tarot app let you get your instant fortune told."
     />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="%PUBLIC_URL%" />
-    <meta property="og:site_name" content="Sawan.io" />
-    <meta property="og:image" content="%PUBLIC_URL%/images/jsc_tarot.png" />
+    <meta property="og:url" content="%REACT_APP_PUBLIC_URL%" />
+    <meta property="og:site_name" content="%REACT_APP_SITE_NAME%" />
+    <meta property="og:image" content="%REACT_APP_PUBLIC_URL%/images/jsc_tarot.png" />
 
     <title>JSC Tarot App</title>
   </head>
@@ -29,7 +29,7 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Z9JRHC0H9B"
+      src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GTAG_CONFIG%"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,7 +37,7 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-Z9JRHC0H9B");
+      gtag("config", "%REACT_APP_GTAG_CONFIG%");
     </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
