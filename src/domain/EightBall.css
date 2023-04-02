@@ -10,11 +10,12 @@
 .text--8ball-answer {
   color: rgb(2, 32, 116);
   position: absolute;
-  top: 27%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, 0%);
   display: inline-block;
   width: 80px;
+  font-size: 1.5em;
 }
 
 .image--shake {
@@ -58,18 +59,30 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  .text--8ball-answer {
+    top: 18%;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .img--8ball {
     width: 350px;
   }
 
   .text--8ball-answer {
-    font-size: smaller;
+    font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 540px) {
   .text--8ball-answer {
-    top: 32%;
+    top: 22%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text--8ball-answer {
+    top: 25%;
   }
 }

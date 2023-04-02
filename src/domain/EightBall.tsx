@@ -44,7 +44,7 @@ const EightBall = () => {
       </span>
       <img
         className={shake + " img--8ball"}
-        src={"images/8ball.svg"}
+        src={"images/8ball.gif"}
         alt="Magic 8 ball"
       />
       <span className="text--8ball-answer">{answer}</span>
